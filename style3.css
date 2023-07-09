@@ -1,0 +1,236 @@
+/*general website rules*/
+body{
+  background-color: white;
+  font-family: "Montserrat", sans-serif;
+}
+/*header bar*/
+.header{
+  padding-top: 70px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  text-align: left;
+  background-color: #e5ddd5;
+  margin: 10px;
+  font-size: 20px;
+  font-family: "Quicksand", sans-serif;
+}
+.cute-icon{
+  height: 70px;
+  background: transparent;
+}
+/*navigation bar*/
+.header2{
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  background-color: whitesmoke;
+  font-family: "Nunito", sans-serif;
+}
+a.menu{
+  color: black;
+}
+.header-text{
+  font-size: 25px;
+  padding-left: 40px;
+  float: left;
+  word-spacing: 30px;
+}
+a.menu:hover{
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/*Past school projects*/
+.PSP-heading{
+  color: black;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  margin-left: 20px;
+  font-size: 35px;
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+}
+.column2{
+  width: 50%;
+  height: 300px;
+  padding-left: auto;
+  padding-bottom: auto;
+  margin: auto;
+  margin-bottom: 50px;
+  background-color: #e5ddd5; 
+  text-align: center;
+}
+.column3{
+  width: 60%;
+  height: 570px;
+  padding-top: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 335px;
+  margin-bottom: 50px;
+  background-color: #e5ddd5; 
+  line-height: 2;
+  text-align: justify;
+}
+.minibox{
+  margin-top: 10px;
+  margin-left: 195px;
+  width: 60%;
+  height: 120px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #FFE3AE;
+  border-radius: 40px;
+  font-size: 15px;
+  text-align: center;
+}
+* {
+  box-sizing: border-box
+}
+body {
+  margin: 0
+}
+.mySlides {
+  display: none
+}
+img {
+  vertical-align: middle;
+}
+.slideshow-container {
+  max-width: auto;
+  position: relative;
+  margin: auto;
+}
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 250px;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: rgba(0, 0, 0, 0);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0);
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
+}
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
+}
+.community-break{
+  margin-top: 10px;
+  height: 10px;
+  margin-bottom: 0px;
+}
+.community-heading{
+  color: black;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  margin-left: 20px;
+  font-size: 35px;
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+}
+.column4{
+  float: left;
+  width: 45%;
+  padding: 40px;
+  padding-left: 70px;
+  padding-right: 70px;
+  height: 475px; 
+  margin: 30px;
+  margin-top: 40px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  background-color: rgba(0, 0, 0, 0);
+  line-height: 2;
+  font-family: "Montserrat", sans-serif;
+}
+.column6{
+  float: left;
+  width: 45%;
+  padding: 1px;
+  padding-left: 10px;
+  padding-right: 70px;
+  height: 565px; 
+  margin: 30px;
+  margin-left: 70px;
+  margin-right: 10px;
+  margin-bottom: 30px;
+  background-color: #e5ddd5;
+  line-height: 2;
+  font-family: "Montserrat", sans-serif;
+  text-align: justify;
+}
+.tertiary{
+  background-image: url("images/tertiary.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.column5{
+  width: 60%;
+  height: 390px;
+  padding-top: 1px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  margin: auto;
+  margin-bottom: 50px;
+  background-color: #e5ddd5; 
+  text-align: justify;
+  line-height: 2;
+}
+
+h2{
+  margin-bottom: -10px; 
+}

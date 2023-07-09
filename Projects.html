@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Projects</title>
+        <link rel="stylesheet" href="style3.css">
+        <link rel="javasheet" href="projects.java">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito&family=Quicksand:wght@700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--Top header-->
+        <div class="header">
+                <h1>Giselle Lim 
+            </h1>
+        </div>
+        <!--navigation bar-->
+        <div class="header2">
+            <p class="header-text">
+                <a href="index.html" class="menu">About</a>
+                <a href="Resume.html"class="menu">Resume</a>
+                <a href="Projects.html"class="menu">Projects</a>
+                <a href="Contact Me.html"class="menu">Contact</a>
+            </p>
+        </div>
+        <!--Community projects-->   
+        <div class="community-break"></div>
+        <h2 class="community-heading">Community Projects</h2>  
+        <div class="community-break"></div>
+        <div class="column3">
+            <h2>Project CO2</h2>
+            <p>3 of my friends and I had decided to set up a values-in-action (VIA) project to help raise awareness about climate change due to the increasing levels of carbon dioxide in the air. This campaign allowed students from our school to participate in challenges to accumulate VIA points for themselves. Being part of the executive committee, I helped the team in planning the project as well as drafting out the proposal to submit to our teacher in charge. After the project had been officially launched, I helped in managing the social media account as well as validating the submissions of our participants. I continuously communicated with the participants about any changes as well as answered any queries they had about the project. If any participant had issues with their submissions, I would also help to communicate with them so that they could resubmit the challenge. This entire project helped me strengthen my leadership skills as well as project management skills. This was the first big-scale project I had helped manage and it was a very fun and meaningful experience.</p>
+            <div class="minibox">
+              <p>Click <a href="https://docs.google.com/document/d/1xPkwiMayQVDsfdkRrUFWeXMyV44PGwt1B7WCkyW0Wpw/edit?usp=share_link" target="_blank">here</a> to view the project proposal.</p>
+              <p>Click <a href="https://www.instagram.com/projectco2_is_cool/" target="_blank">here</a> to view the offical Instagram page for this project.</p>
+            </div>
+        </div>
+        <div class="column5">
+          <h2>Freshmen Orientation 2023</h2>
+          <p>During my second year in Nanyang Polytechnic, I participated as a game facilitator in the freshmen orientation for my school. We took part in 2 facilitation courses as well as planned out all the games that were to be played that day. As a team, we thought of different clues for the amazing race that was to be held. I helped in the dry run of the orientation and was assigned to manage a game booth during both the amazing race and the round-robin games. I helped in setting up all the games as well as conducted icebreakers for my assigned orientation group at the start of the event. During this experience, I further strengthened my leadership skills as I led my group to play games during the first 1 hour of the event and managed the game booths. This event also strengthened my problem solving skills as I had to quickly solve any issues that arose during the event. Having to work with such a big group of students also definitely helped in developing my teamwork skills.</p>
+      </div>
+        <div class="column6">
+            <h2>Church Camp Projects</h2>
+            <p>Every year without fail, I will volunteer to help out in the camps held by my church at least twice a year. In my earlier years, my roles included being part of the games team, being a worship leader as well as being a group facilitator. It is only in the more recent years that I have assumed a higher role of being part of the overall-in-charge team of the camp. One of my more recent roles was being the admin leader of the camp. I was in charge of confirming all the participants who were coming and taking note if they were to have any movements during the camp. I was also in-charge of safekeeping all of their valuables such as their phones and wallets. Other tasks included contacting the participants' parents and taking note of dietary requirements. I have also assumed the role of facilitator head which meant that I was in charge of all the group facilitators and their well-being. These positions I have had the opportunity of taking up in church have allowed me to really step up in terms of leadership as well as project management. I also had to learn how to manage my tasks from church with my school work and CCA which has taught me a lot more about good time management.</p>
+        </div>
+        <div class="column4 slideshow-container">
+          <div class="mySlides fade">
+            <img src="images/camp.jpg" style="width:100%">
+          </div>
+          <div class="mySlides fade">
+            <img src="images/camp2.jpg" style="width:100%">
+          </div>
+          <div class="mySlides fade">
+            <img src="images/camp3.jpg" style="width:100%">
+          </div>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(0)"></span>
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+        <script>
+          let slideIndex = 0;
+          let timeoutId = null;
+          const slides = document.getElementsByClassName("mySlides");
+          const dots = document.getElementsByClassName("dot");
+          
+          showSlides();
+          function currentSlide(index) {
+               slideIndex = index;
+               showSlides();
+          }
+         function plusSlides(step) {
+            
+            if(step < 0) {
+                slideIndex -= 2;
+                
+                if(slideIndex < 0) {
+                  slideIndex = slides.length - 1;
+                }
+            }
+            
+            showSlides();
+         }
+          function showSlides() {
+            for(let i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+              dots[i].classList.remove('active');
+            }
+            slideIndex++;
+            if(slideIndex > slides.length) {
+              slideIndex = 1
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].classList.add('active');
+             if(timeoutId) {
+                clearTimeout(timeoutId);
+             }
+            timeoutId = setTimeout(showSlides, 5000); // Change image every 5 seconds
+          }
+        </script>
+         
+</body>
+</html>

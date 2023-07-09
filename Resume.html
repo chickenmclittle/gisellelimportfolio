@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Resume</title>
+        <link rel="stylesheet" href="style2.css">
+        <link rel="javasheet" href="resume.java">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito&family=Quicksand:wght@700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--Top header-->
+        <div class="header">
+            <h1>Giselle Lim</h1>
+        </div>
+        <!--navigation bar-->
+        <div class="header2">
+            <p class="header-text">
+                <a href="index.html" class="menu">About</a>
+                <a href="Resume.html"class="menu">Resume</a>
+                <a href="Projects.html"class="menu">Projects</a>
+                <a href="Contact Me.html"class="menu">Contact</a>
+            </p>
+        </div>
+        <!--Resume box-->
+          <div class="download-resume">
+                <a href="https://drive.google.com/file/d/1ap0Musd6fgQ1ReaMUmkvSLqCMsnD7EVN/view?usp=share_link" class="resume" target="_blank">Download CV</a>
+          </div>
+        <!--Internship-->
+        <div class="experience-heading">Past experiences</div>
+        <div class="JAC">
+          <h1 class="JACh1">Job Attachment</h1>
+          <h2 class="JACh2">Februrary 2023 - April 2023</h2>
+          <p>During my holidays, I accomplished a work attachment at NUS. I was assigned to work at an analytical lab with a few other students from other schools. During my work term there, I completed a project about reducing nitrate levels in water using copper, nickel and carbon fiber paper electrodes via electrochemical reduction alongside my fellow peers. While working on our research, we were held accountable for our workspace and had to ensure cleanliness and tidiness of the laboratory at the end of the day before we went home. We ensured that our equipment were calibrated properly before and after usage as well as made sure that they were properly cleaned after every use. This experience allowed me further strengthen my teamwork and communication skills as well as develop my project management skills which has helped me better manage my school projects.</p>
+        </div>
+        <div class="experience-break"></div>
+        <div class="column2">
+            <h1>Internship</h1>
+            <h2>September 2024 - January</h2>
+            <p>I completed a 24-week long internship at Monash College Melbourne, Australia as per my academic syllabus. Staying abroad alone for the first time, I had learnt how to become more independent and take charge of my own life. Without having my parents there, I had to learn how to properly manage my time between work and outside affairs. My time there also allowed me to become more adaptable as I adapted to sudden changes in environment and work practices. During my work term there, I was assigned to shadow one of the laboratory technicians. One of my tasks included assisting in method validation to ensure that the experiment was safe and that the procedure steps allowed the experiment to be repeated by the students. As the lesson curriculum had a vast variety of topics, I was able to practise using equipment which I was not able to use regularly back in school such as high performance liquid chromatography. If the experimental procedures had errors in them, I was also to propose changes to the steps and present them to my supervisor. Overall, my entire experience during this internship was very eye-opening and it allowed me to broaden my knowledge about the field of chemistry.</p>
+        </div>
+        <!--Internship slideshow-->
+        <div class="column3 slideshow-container">
+            <div class="mySlides fade">
+              <img src="images/iimg1.jpeg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+              <img src="images/iimg2.jpeg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+              <img src="images/iimg3.jpeg" style="width:100%">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+          </div>
+          <script>
+            let slideIndex = 0;
+            let timeoutId = null;
+            const slides = document.getElementsByClassName("mySlides");
+            const dots = document.getElementsByClassName("dot");
+            
+            showSlides();
+            function currentSlide(index) {
+                 slideIndex = index;
+                 showSlides();
+            }
+           function plusSlides(step) {
+              
+              if(step < 0) {
+                  slideIndex -= 2;
+                  
+                  if(slideIndex < 0) {
+                    slideIndex = slides.length - 1;
+                  }
+              }
+              
+              showSlides();
+           }
+            function showSlides() {
+              for(let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+                dots[i].classList.remove('active');
+              }
+              slideIndex++;
+              if(slideIndex > slides.length) {
+                slideIndex = 1
+              }
+              slides[slideIndex - 1].style.display = "block";
+              dots[slideIndex - 1].classList.add('active');
+               if(timeoutId) {
+                  clearTimeout(timeoutId);
+               }
+              timeoutId = setTimeout(showSlides, 5000); // Change image every 5 seconds
+            }
+          </script>
+        <!--Educational Qualifications-->   
+        <div class="educational-break"></div>
+        <h2 class="educational-heading">Educational Qualifications</h2>  
+        <div class="educational-break"></div>
+        <div class="column4">    
+          <h2>Nanyang Polytechnic</h2>
+          <h3>Diploma in Applied Chemistry</h3>
+          <h4>2022-2025</h4>
+        </div>
+        <div class="educational-break"></div>
+        <div class="column5 tertiary">
+            <h2>CHIJ St Nicholas Girls' School</h2>
+            <h3>GCE O'Levels</h3>
+            <h4>2018-2021</h4>
+            <h5>Click <a href="https://drive.google.com/file/d/16nTgO9vGrLgQQSnUKPNVOIEYcUhSxkN1/view?usp=share_link" target="_blank">here</a> to view my certificate</h5>
+        </div>
+        <!--CCA Achievements-->
+        <h2 class="CCA-heading">Achievements</h2>
+        <div class="CCA-break"></div>
+        <div class="column6">
+            <h2>PO-LITE Games 2022/2023</h2>
+            <h3>Ultimate Frisbee (Mixed Category)</h3>
+            <h4>1st Place</h4>
+            <img src="images/polite1.jpg" class="polite1" alt="polite picture">
+        </div>
+        <div class="CCA-break"></div>
+        <div class="column6">
+          <h2>PO-LITE Games 2023/2024</h2>
+          <h3>Ultimate Frisbee (Mixed Category)</h3>
+          <h4>1st Place</h4>
+          <img src="images/polite2.jpg" class="polite2" alt="picture of people">
+        </div>
+        <div class="CCA-break"></div>
+        <div class="column7">
+          <h2>National Youth Achievement Award</h2>
+          <h3>Silver Medal</h3>
+          <h4>Click <a href="https://drive.google.com/file/d/1tFYmo16Cv-FAXbeWimXcfzXEpKql0jFX/view?usp=share_link" target="_blank">here</a> to view my certificate</h4>
+        </div>  
+        <div class="CCA-break"></div>
+        <div class="pastcca-heading">CCAs</div> 
+        <div class="CCA-break"></div>
+        <div class="column8">
+          <h2>Ultimate Frisbee</h2>
+          <h3>2022-2025</h3>
+          <h4>Club Member</h4>
+          <img src="images/cca.jpg" class="ccaimg">
+        </div> 
+        <div class="CCA-break"></div>
+        <div class="column9">
+          <h2>Infocomm Media Club</h2>  
+          <h3>Executive Committee Member</h3>
+          <h4>2018-2021</h4>
+          <img src="images/cca2.jpg" class="ccaimg2">
+        </div> 
+</body>
+</html>

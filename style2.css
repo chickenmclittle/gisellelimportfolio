@@ -1,0 +1,342 @@
+/*general website rules*/
+body{
+    background-color: #fffcf8;
+    font-family: "Montserrat", sans-serif;
+}
+/*header bar*/
+.header{
+    padding-top: 70px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    text-align: left;
+    background-color: #e5ddd5;
+    margin: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: "Quicksand", sans-serif;
+}
+.cute-icon{
+    height: 70px;
+    background: transparent;
+}
+/*navigation bar*/
+.header2{
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    background-color: #fffcf8;
+    font-family: "Nunito", sans-serif;
+}
+a.menu{
+    color: black;
+}
+.header-text{
+    font-size: 25px;
+    padding-left: 40px;
+    float: left;
+    word-spacing: 30px;
+}
+a.menu:hover{
+    color: rgba(0, 0, 0, 0.5);
+}
+/*Resume box*/
+.download-resume{
+    margin-top: 50px;
+    margin-left: 720px;
+    width: 250px;
+    height: 100px;
+    padding-top: 30px;
+    background-color: #e5ddd5;
+    border-radius: 40px;
+    font-size: 30px;
+    text-align: center;
+ }
+ a.resume{
+    color: black;
+ }
+ a.resume:hover{
+    color: rgba(0, 0, 0, 0.5);
+ }
+ /*internship*/
+ .column2{
+  float: left;
+    width: 45%;
+    padding: 20px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 645px; 
+    margin: 30px;
+    margin-left: 70px;
+    margin-right: 30px;
+    margin-bottom: 70px;
+    background-color: #e5ddd5;
+    line-height: 2;
+}
+.JAC{
+  width: 45%;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 50px;
+  height: 455px; 
+  margin: auto;
+  margin-left: 470px;
+  margin-bottom: 10px;
+  background-color: #e5ddd5;
+  font-family: "Montserrat", sans-serif;
+  line-height: 2;
+  text-align: justify;
+}
+.experience-break{
+  margin-top: 10px;
+  height: 10px;
+  margin-bottom: 10px;
+}
+ .column3{
+  float: left;
+    width: 45%;
+    padding: 20px;
+    padding-top: 30px;
+    padding-left: 80px;
+    padding-right: 30px;
+    height: 800px; 
+    margin: 30px;
+    margin-right: 30px;
+    margin-bottom: 70px;
+    background-color: rgba(0, 0, 0, 0);
+    line-height: 2;
+  }
+  * {
+    box-sizing: border-box
+  }
+  body {
+    margin: 0
+  }
+  .mySlides {
+    display: none
+  }
+  img {
+    vertical-align: middle;
+  }
+  .slideshow-container {
+    max-width: auto;
+    position: relative;
+    margin: auto;
+  }
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 350px;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: rgba(0, 0, 0, 0);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  @-webkit-keyframes fade {
+    from {
+      opacity: .4
+    }
+    to {
+      opacity: 1
+    }
+  }
+  @keyframes fade {
+    from {
+      opacity: .4
+    }
+    to {
+      opacity: 1
+    }
+  }
+.experience-heading{
+  color: black; 
+  margin-top: 100px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  font-size: 35px;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+}
+
+.educational-break{
+    margin-top: 10px;
+    height: 10px;
+    margin-bottom: 0px;
+}
+.educational-heading{
+    color: black;
+    margin-top: 400px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    font-size: 35px;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+}
+.column4{
+  width: 45%;
+  box-sizing: border-box;
+  padding: 20px;
+  padding-left: auto;
+  padding-bottom: 50px;
+  height: 200px; 
+  margin: auto;
+  background-color: #e5ddd5;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+.column5{
+  width: 45%;
+  box-sizing: border-box;
+  padding: 20px;
+  padding-left: auto;
+  padding-bottom: 50px;
+  height: 230px; 
+  margin: auto;
+  background-color: #e5ddd5;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+.CCA-break{
+    margin-top: 10px;
+    height: 10px;
+    margin-bottom: 10px;
+}
+.CCA-heading{
+    color: black;
+    margin-top: 100px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    font-size: 35px;
+    font-family: "Quicksand", sans-serif;
+    text-align: center;
+}
+.column6{
+  width: 45%;
+  box-sizing: border-box;
+  padding-top: 1px;
+  padding-left: 20px;
+  padding-bottom: 50px;
+  height: 550px; 
+  margin: auto;
+  background-color: #e5ddd5;
+  font-family: "Montserrat", sans-serif
+}
+
+.column7{
+  width: 45%;
+  box-sizing: border-box;
+  padding-left: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: 230px; 
+  margin: auto;
+  background-color: #e5ddd5;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+.pastcca-heading{
+  color: black;
+    margin-top: 100px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    font-size: 35px;
+    font-family: "Quicksand", sans-serif;
+    text-align: center;
+}
+.column8{
+  width: 45%;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-top: 1px;
+  padding-bottom: 10px;
+  height: 550px; 
+  margin: auto;
+  background-color: #e5ddd5;
+  font-family: "Montserrat", sans-serif;  
+}
+
+.column9{
+  width: 45%;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-top: 1px;
+  padding-bottom: 10px;
+  height: 540px; 
+  margin: auto;
+  background-color: #e5ddd5;
+  font-family: "Montserrat", sans-serif;
+}
+
+
+.JAC h1{
+  margin-bottom: -30px;
+}
+.JAC h2{
+  margin-bottom: -20px;
+}
+.column2 h1{
+  margin-bottom: -30px;
+}
+.column2 h2{
+  margin-bottom: -20px;
+}
+
+.polite1{
+  width: 700px;
+  height: 380px;
+  padding-left: 20px;
+}
+.polite2{
+  width: 700px;
+  height: 380px;
+  padding-left: 20px;
+}
+.ccaimg{
+  width: 700px;
+  height: 380px;
+  padding-left: 20px;
+}
+.ccaimg2{
+  width: 300;
+  height: 350px;
+  padding-left: 120px;
+}

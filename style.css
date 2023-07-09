@@ -1,0 +1,112 @@
+  /*top header profile image*/
+.profile-small {
+    height:150px;
+    border-radius: 50%;
+    border: 10px solid #A08E7C;
+ }
+ /*top header name*/
+.header{
+    padding-top: 70px;
+    padding-bottom: 20px;
+    text-align: center;
+    background-color: #e5ddd5;
+    margin: 30px;
+    font-size: 20px;
+    font-family: "Quicksand", sans-serif;
+}
+/*general website rules*/
+body{
+    background-color: #FFFCF8;
+    font-family: "Montserrat", sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+/*creating 2 equal columns floating next to each other*/
+.column2{
+    float: left;
+    width: 45%;
+    padding: 20px;
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-right: 70px;
+    height: 1030px; 
+    margin: 30px;
+    margin-right: 30px;
+    margin-bottom: 70px;
+    background-color: #e5ddd5;
+    line-height: 2;
+}
+.about{
+    font-family: "Quicksand", sans-serif;
+}
+.my-name{
+    font-family: "Montserrat", sans-serif;
+}
+
+/*adding about me profile image*/
+.largeprofile{
+    background-image: url("images/large-picture.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+/*adding a section break*/
+.section-break{
+    margin-top: 100px;
+    height: 500px;
+    margin-bottom: 0px;
+}
+h1{
+    margin-bottom: 0%;
+}
+p1{
+    margin-top: 0px;
+}
+/*testimonial column*/
+.section-heading{
+    color: black;
+    margin-top: 200px;
+    font-size: 35px;
+    font-family: "Quicksand", sans-serif;
+    text-align: center;
+    padding-bottom: 0px;
+}
+/*adding a wide column*/
+.column1{
+    width: 60%;
+    height: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: auto;
+    margin-bottom: 50px;
+    background-color: #e5ddd5; 
+    text-align: center;
+    line-height: 2;
+}
+
+
+/*header navigation*/
+.header2{
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    background-color: #FFFCF8;
+    font-family: "Nunito", sans-serif;
+}
+.header-text{
+    font-size: 25px;
+    padding-left: 40px;
+    float: left;
+    word-spacing: 30px;
+}
+a.menu:hover{
+    color: rgba(0, 0, 0, 0.5);
+}
+a.menu{
+    color: black;
+}
